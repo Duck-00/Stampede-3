@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://drm1gmxa7i7yv"]
+
+[ext_resource type="Texture2D" uid="uid://cmodc25wkerpi" path="res://assets/main_menu/Shop.webp" id="1_lv3vh"]
+[ext_resource type="Script" uid="uid://died2ewasfqox" path="res://assets/main_menu/buy_apple.gd" id="2_hfkt2"]
+[ext_resource type="Script" uid="uid://nmcvfuovo87m" path="res://assets/main_menu/buy_hay.gd" id="3_1wpp2"]
+[ext_resource type="Script" uid="uid://dja7hdrxx6adn" path="res://assets/main_menu/buy_protein.gd" id="4_bcoxo"]
+[ext_resource type="Script" uid="uid://bj1hwcg4wkhxp" path="res://assets/main_menu/buy_moldy_hay.gd" id="5_fyuq0"]
+[ext_resource type="Script" uid="uid://chwa0hpb6tmod" path="res://assets/main_menu/back_button.gd" id="6_bcoxo"]
+
+[node name="Node2D" type="Node2D" unique_id=2112272015]
+
+[node name="Shop" type="Sprite2D" parent="." unique_id=1812603513]
+position = Vector2(960, 530)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_lv3vh")
+
+[node name="buy_apple" type="Button" parent="." unique_id=1076537172]
+offset_left = 298.0
+offset_top = 530.0
+offset_right = 398.0
+offset_bottom = 561.0
+scale = Vector2(1.0188524, 2.1646464)
+flat = true
+script = ExtResource("2_hfkt2")
+
+[node name="buy_hay" type="Button" parent="." unique_id=1110146903]
+offset_left = 717.0
+offset_top = 530.0
+offset_right = 817.0
+offset_bottom = 561.0
+scale = Vector2(0.98556644, 2.228509)
+text = "
+"
+flat = true
+script = ExtResource("3_1wpp2")
+
+[node name="buy_protein" type="Button" parent="." unique_id=1647591776]
+offset_left = 319.0
+offset_top = 871.0
+offset_right = 419.0
+offset_bottom = 902.0
+scale = Vector2(1, 2.2192683)
+text = "
+"
+flat = true
+script = ExtResource("4_bcoxo")
+
+[node name="buy_moldy_hay" type="Button" parent="." unique_id=1215212185]
+offset_left = 718.0
+offset_top = 871.0
+offset_right = 818.0
+offset_bottom = 902.0
+scale = Vector2(1.0265095, 2.2063274)
+flat = true
+script = ExtResource("5_fyuq0")
+
+[node name="back_button" type="Button" parent="." unique_id=1375859085]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Back	
+"
+script = ExtResource("6_bcoxo")
