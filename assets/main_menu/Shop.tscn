@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://drm1gmxa7i7yv"]
 
+[ext_resource type="Script" uid="uid://b3dghr08u4mr1" path="res://assets/main_menu/shop.gd" id="1_fyuq0"]
 [ext_resource type="Texture2D" uid="uid://cmodc25wkerpi" path="res://assets/main_menu/Shop.webp" id="1_lv3vh"]
 [ext_resource type="Script" uid="uid://died2ewasfqox" path="res://assets/main_menu/buy_apple.gd" id="2_hfkt2"]
 [ext_resource type="Script" uid="uid://nmcvfuovo87m" path="res://assets/main_menu/buy_hay.gd" id="3_1wpp2"]
@@ -8,6 +9,7 @@
 [ext_resource type="Script" uid="uid://chwa0hpb6tmod" path="res://assets/main_menu/back_button.gd" id="6_bcoxo"]
 
 [node name="Node2D" type="Node2D" unique_id=2112272015]
+script = ExtResource("1_fyuq0")
 
 [node name="Shop" type="Sprite2D" parent="." unique_id=1812603513]
 position = Vector2(960, 530)
@@ -62,3 +64,10 @@ theme_override_font_sizes/font_size = 50
 text = "Back	
 "
 script = ExtResource("6_bcoxo")
+
+[node name="Label" type="Label" parent="." unique_id=1366139274]
+offset_left = 1649.527
+offset_top = 49.004196
+offset_right = 1689.527
+offset_bottom = 72.004196
+scale = Vector2(6.666531, 5.4000015)

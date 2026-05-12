@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://chtrpsa87eg1v"]
 
-[ext_resource type="Texture2D" uid="uid://e8lbrkdadwjf" path="res://assets/main_menu/Background.png" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://e8lbrkdadwjf" path="res://Background.png" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://h8ry3fk8nkq1" path="res://quit_button.gd" id="2_7vrkn"]
 [ext_resource type="Script" uid="uid://ni6b0riyx6ec" path="res://credits_button.gd" id="2_fu7sn"]
+[ext_resource type="Script" uid="uid://dgobel164l0ro" path="res://play_button.gd" id="2_glbon"]
 [ext_resource type="Script" uid="uid://ciwmn3mwnalwb" path="res://shop_button.gd" id="2_jix8l"]
 
 [node name="MainMenu" type="MarginContainer" unique_id=700935263]
 offset_left = 6.0
-offset_right = 1926.0
-offset_bottom = 1080.0
+offset_right = 1742.3635
+offset_bottom = 977.2727
 scale = Vector2(1.1, 1.1)
 mouse_filter = 0
 
@@ -43,6 +44,7 @@ theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 80
 text = "Play"
 flat = true
+script = ExtResource("2_glbon")
 
 [node name="shop_button" type="Button" parent="CenterContainer/VBoxContainer2" unique_id=2032013936]
 layout_mode = 2

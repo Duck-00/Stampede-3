@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://k5cravl723fc"]
 
 [ext_resource type="Script" uid="uid://chwa0hpb6tmod" path="res://assets/main_menu/back_button.gd" id="1_8o8mu"]
-[ext_resource type="Texture2D" uid="uid://e8lbrkdadwjf" path="res://assets/main_menu/Background.png" id="1_bx61s"]
+[ext_resource type="Texture2D" uid="uid://e8lbrkdadwjf" path="res://Background.png" id="1_bx61s"]
 
 [node name="Node2D" type="Node2D" unique_id=1243351122]
 
