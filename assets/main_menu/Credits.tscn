@@ -2,8 +2,10 @@
 
 [ext_resource type="Script" uid="uid://chwa0hpb6tmod" path="res://assets/main_menu/back_button.gd" id="1_8o8mu"]
 [ext_resource type="Texture2D" uid="uid://e8lbrkdadwjf" path="res://Background.png" id="1_bx61s"]
+[ext_resource type="Script" uid="uid://n3f6kk7ytipr" path="res://assets/main_menu/credits.gd" id="1_uksyi"]
 
 [node name="Node2D" type="Node2D" unique_id=1243351122]
+script = ExtResource("1_uksyi")
 
 [node name="back_button" type="Button" parent="." unique_id=382050139]
 offset_right = 8.0
@@ -36,4 +38,4 @@ theme_override_font_sizes/font_size = 50
 text = "Duck - Main Dev
 Hex - Team Lead
 Kobe - Art design
-Aexanyte - Complaining Dev"
+Logan - Play tester"

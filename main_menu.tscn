@@ -1,10 +1,7 @@
 [gd_scene format=3 uid="uid://chtrpsa87eg1v"]
 
 [ext_resource type="Texture2D" uid="uid://e8lbrkdadwjf" path="res://Background.png" id="1_06t4h"]
-[ext_resource type="Script" uid="uid://h8ry3fk8nkq1" path="res://quit_button.gd" id="2_7vrkn"]
-[ext_resource type="Script" uid="uid://ni6b0riyx6ec" path="res://credits_button.gd" id="2_fu7sn"]
-[ext_resource type="Script" uid="uid://dgobel164l0ro" path="res://play_button.gd" id="2_glbon"]
-[ext_resource type="Script" uid="uid://ciwmn3mwnalwb" path="res://shop_button.gd" id="2_jix8l"]
+[ext_resource type="Script" uid="uid://b6hlosjul355k" path="res://main_menu.gd" id="1_nlkkf"]
 
 [node name="MainMenu" type="MarginContainer" unique_id=700935263]
 offset_left = 6.0
@@ -12,6 +9,7 @@ offset_right = 1742.3635
 offset_bottom = 977.2727
 scale = Vector2(1.1, 1.1)
 mouse_filter = 0
+script = ExtResource("1_nlkkf")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=874349567]
 show_behind_parent = true
@@ -44,7 +42,6 @@ theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 80
 text = "Play"
 flat = true
-script = ExtResource("2_glbon")
 
 [node name="shop_button" type="Button" parent="CenterContainer/VBoxContainer2" unique_id=2032013936]
 layout_mode = 2
@@ -62,7 +59,6 @@ theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 75
 text = "Shop"
 flat = true
-script = ExtResource("2_jix8l")
 
 [node name="credits_button" type="Button" parent="CenterContainer/VBoxContainer2" unique_id=1312861506]
 layout_mode = 2
@@ -80,7 +76,6 @@ theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 text = "Credits"
 flat = true
-script = ExtResource("2_fu7sn")
 
 [node name="quit_button" type="Button" parent="CenterContainer/VBoxContainer2" unique_id=118553730]
 layout_mode = 2
@@ -98,4 +93,8 @@ theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 65
 text = "Quit"
 flat = true
-script = ExtResource("2_7vrkn")
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer2/play_button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer2/shop_button" to="." method="_on_shop_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer2/credits_button" to="." method="_on_credits_button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer2/quit_button" to="." method="_on_quit_button_pressed"]

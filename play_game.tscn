@@ -29,7 +29,7 @@ flip_h = true
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D" unique_id=550031729]
 position = Vector2(726, 553)
-polygon = PackedVector2Array(-79, -17, 52, -54, 128, -42, 123, -11, 69, 3, 66, 56, 32, 64, -31, 34, -46, 68, -82, 65, -91, 13, -119, 3)
+polygon = PackedVector2Array(-115, 6, -112, 12, -96, 14, -92, 29, -95, 47, -86, 67, -61, 74, -41, 67, -35, 45, -35, 35, 1, 48, 10, 59, 40, 66, 70, 58, 66, 29, 72, 21, 68, 16, 72, 7, 91, 1, 118, -6, 126, -21, 133, -30, 127, -43, 99, -50, 41, -53, 6, -45, -29, -36, -55, -25, -105, -5, -116, 2)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=648239942]
 position = Vector2(-330, 233)
