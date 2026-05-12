@@ -14,16 +14,22 @@ config/name="stampede 3"
 run/main_scene="uid://chtrpsa87eg1v"
 config/features=PackedStringArray("4.6")
 
+[autoload]
+
+Global="*uid://dae6vishhj8nj"
+
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
+mouse_cursor/custom_image_hotspot=Vector2(2, 2)
 window/size/width=1366
 window/size/height=768
 
 [editor]
 
+movie_writer/fps=300
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
 
@@ -62,3 +68,9 @@ down={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":83,"key_label":0,"unicode":115,"location":0,"echo":false,"script":null)
 ]
 }
+
+[rendering]
+
+anti_aliasing/quality/msaa_2d=1
+anti_aliasing/quality/msaa_3d=1
+anti_aliasing/quality/screen_space_aa=2

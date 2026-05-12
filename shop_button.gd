@@ -2,4 +2,4 @@ extends Button
 #test
 
 func _pressed():
-	get_tree().change_scene_to_file("res://assets/main_menu/Shop.tscn")
+	Global.goto_scene("res://assets/main_menu/Shop.tscn")
