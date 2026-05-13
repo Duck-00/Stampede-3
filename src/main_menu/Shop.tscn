@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://cpemq0jteh7ao"]
+
+[ext_resource type="Script" path="res://src/main_menu/shop.gd" id="1_fyuq0"]
+[ext_resource type="Texture2D" path="res://src/main_menu/Shop.webp" id="1_lv3vh"]
+[ext_resource type="Script" path="res://src/main_menu/back_button.gd" id="6_bcoxo"]
+[ext_resource type="Texture2D" uid="uid://2gycoy1exbd6" path="res://smackaroo.png" id="8_fvq2k"]
+[ext_resource type="Script" path="res://src/main_menu/next_page.gd" id="8_ilkvf"]
+
+[node name="Node2D" type="Node2D" unique_id=2112272015]
+script = ExtResource("1_fyuq0")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1538340723]
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Shop" type="Sprite2D" parent="CenterContainer" unique_id=587193816]
+position = Vector2(951.00006, 541)
+scale = Vector2(1.4492538, 1.5)
+texture = ExtResource("1_lv3vh")
+
+[node name="buy_apple" type="Button" parent="." unique_id=1076537172]
+offset_left = 298.0
+offset_top = 266.0
+offset_right = 405.96463
+offset_bottom = 422.60757
+scale = Vector2(1.0188524, 2.1646464)
+tooltip_text = "$5000
++ 50 Speed"
+flat = true
+
+[node name="buy_hay" type="Button" parent="." unique_id=1110146903]
+offset_left = 717.0
+offset_top = 247.0
+offset_right = 817.0
+offset_bottom = 427.99072
+scale = Vector2(0.98556644, 2.228509)
+tooltip_text = "$50
++ 5 Speed
+"
+flat = true
+
+[node name="buy_protein" type="Button" parent="." unique_id=1647591776]
+offset_left = 319.0
+offset_top = 725.0
+offset_right = 419.0
+offset_bottom = 844.7875
+scale = Vector2(1, 2.2192683)
+tooltip_text = "$1000
++ 15 Speed
+
+"
+flat = true
+
+[node name="buy_moldy_hay" type="Button" parent="." unique_id=1215212185]
+offset_left = 718.0
+offset_top = 640.0
+offset_right = 818.0
+offset_bottom = 774.61285
+scale = Vector2(1.0265095, 2.2063274)
+tooltip_text = "$5
+-20 Speed"
+flat = true
+
+[node name="back_button" type="Button" parent="." unique_id=1375859085]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Back	
+"
+script = ExtResource("6_bcoxo")
+
+[node name="next page" type="Button" parent="." unique_id=1711482718]
+offset_left = 1818.0
+offset_top = -33.0
+offset_right = 1931.3917
+offset_bottom = 1096.0
+flat = true
+script = ExtResource("8_ilkvf")
+
+[node name="Label" type="Label" parent="." unique_id=1366139274]
+offset_left = 1574.2047
+offset_top = 71.829124
+offset_right = 1575.2047
+offset_bottom = 147.82913
+theme_override_font_sizes/font_size = 55
+
+[node name="player" type="Sprite2D" parent="Label" unique_id=88873782]
+position = Vector2(-19.454704, 31.970871)
+scale = Vector2(0.063194446, 0.061)
+texture = ExtResource("8_fvq2k")

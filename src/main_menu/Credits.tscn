@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://d1utb7cy7cdyc"]
+
+[ext_resource type="Script" path="res://src/main_menu/back_button.gd" id="1_8o8mu"]
+[ext_resource type="Texture2D" uid="uid://e8lbrkdadwjf" path="res://Background.png" id="1_bx61s"]
+[ext_resource type="Script" path="res://src/main_menu/credits.gd" id="1_uksyi"]
+
+[node name="Node2D" type="Node2D" unique_id=1243351122]
+script = ExtResource("1_uksyi")
+
+[node name="back_button" type="Button" parent="." unique_id=382050139]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Back	
+"
+script = ExtResource("1_8o8mu")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=969765411]
+show_behind_parent = true
+position = Vector2(960, 530)
+scale = Vector2(1.6, 1.6)
+texture = ExtResource("1_bx61s")
+flip_h = true
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=992974980]
+offset_left = 1000.0
+offset_top = 520.0
+offset_right = 1787.0
+offset_bottom = 805.0
+use_top_left = true
+
+[node name="Label" type="Label" parent="CenterContainer" unique_id=970926249]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.21568628, 0, 0.3254902, 1)
+theme_override_colors/font_outline_color = Color(0.7380309, 0.73803085, 0.73803085, 1)
+theme_override_font_sizes/font_size = 50
+text = "Duck - Main Dev
+Hex - Team Lead
+Kobe - Art design
+Logan - Play tester"
