@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j8aelxhrspug"
-path="res://.godot/imported/door_nob.webp-6f7b57ee1cac3ab2c069a2f1c7a05d67.ctex"
+uid="uid://vg57juihwco4"
+path="res://.godot/imported/racing_background.png-709aee6f824f72b1ac03693deba9ac7c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/main_menu/door_nob.webp"
-dest_files=["res://.godot/imported/door_nob.webp-6f7b57ee1cac3ab2c069a2f1c7a05d67.ctex"]
+source_file="res://src/main_menu (2)/racing_background.png"
+dest_files=["res://.godot/imported/racing_background.png-709aee6f824f72b1ac03693deba9ac7c.ctex"]
 
 [params]
 

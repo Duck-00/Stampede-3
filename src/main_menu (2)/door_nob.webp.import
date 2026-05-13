@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmodc25wkerpi"
-path="res://.godot/imported/Shop.webp-911a7102354a50ab68b668cdd959ced7.ctex"
+uid="uid://j8aelxhrspug"
+path="res://.godot/imported/door_nob.webp-acb80fb9ed07c8bb55ee6399748b628a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/main_menu/Shop.webp"
-dest_files=["res://.godot/imported/Shop.webp-911a7102354a50ab68b668cdd959ced7.ctex"]
+source_file="res://src/main_menu (2)/door_nob.webp"
+dest_files=["res://.godot/imported/door_nob.webp-acb80fb9ed07c8bb55ee6399748b628a.ctex"]
 
 [params]
 

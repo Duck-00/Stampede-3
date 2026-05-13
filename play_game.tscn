@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://d0sqvrkdeky06"]
 
 [ext_resource type="Script" uid="uid://eu0tvaf040iv" path="res://playtomenu.gd" id="1_3jblo"]
-[ext_resource type="Texture2D" uid="uid://vg57juihwco4" path="res://assets/main_menu/racing_background.png" id="1_edhw6"]
+[ext_resource type="Texture2D" uid="uid://vg57juihwco4" path="res://src/main_menu (2)/racing_background.png" id="1_edhw6"]
 [ext_resource type="Script" uid="uid://bbgydplmatvxe" path="res://character_body_2d.gd" id="3_bll63"]
-[ext_resource type="Texture2D" uid="uid://j8aelxhrspug" path="res://assets/main_menu/door_nob.webp" id="4_2n4p3"]
+[ext_resource type="Texture2D" uid="uid://j8aelxhrspug" path="res://src/main_menu (2)/door_nob.webp" id="4_2n4p3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a4gw8"]
 size = Vector2(398.66638, 287.98877)

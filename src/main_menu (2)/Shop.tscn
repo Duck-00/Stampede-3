@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://drm1gmxa7i7yv"]
 
-[ext_resource type="Script" uid="uid://b3dghr08u4mr1" path="res://assets/main_menu/shop.gd" id="1_fyuq0"]
-[ext_resource type="Texture2D" uid="uid://cmodc25wkerpi" path="res://assets/main_menu/Shop.webp" id="1_lv3vh"]
-[ext_resource type="Script" uid="uid://chwa0hpb6tmod" path="res://assets/main_menu/back_button.gd" id="6_bcoxo"]
+[ext_resource type="Script" uid="uid://b3dghr08u4mr1" path="res://src/main_menu (2)/shop.gd" id="1_fyuq0"]
+[ext_resource type="Texture2D" uid="uid://cmodc25wkerpi" path="res://src/main_menu (2)/Shop.webp" id="1_lv3vh"]
+[ext_resource type="Script" uid="uid://chwa0hpb6tmod" path="res://src/main_menu (2)/back_button.gd" id="6_bcoxo"]
 [ext_resource type="Texture2D" uid="uid://2gycoy1exbd6" path="res://smackaroo.png" id="8_fvq2k"]
-[ext_resource type="Script" uid="uid://m550gs2a5tfs" path="res://assets/main_menu/next_page.gd" id="8_ilkvf"]
+[ext_resource type="Script" uid="uid://m550gs2a5tfs" path="res://src/main_menu (2)/next_page.gd" id="8_ilkvf"]
 
 [node name="Node2D" type="Node2D" unique_id=2112272015]
 script = ExtResource("1_fyuq0")
