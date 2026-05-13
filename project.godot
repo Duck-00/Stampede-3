@@ -16,7 +16,7 @@ config/features=PackedStringArray("4.6")
 
 [autoload]
 
-Global="*uid://dae6vishhj8nj"
+GameData="*uid://snsybpje0rqc"
 
 [display]
 

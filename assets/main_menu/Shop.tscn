@@ -20,43 +20,45 @@ texture = ExtResource("1_lv3vh")
 
 [node name="buy_apple" type="Button" parent="." unique_id=1076537172]
 offset_left = 298.0
-offset_top = 530.0
-offset_right = 398.0
-offset_bottom = 561.0
+offset_top = 266.0
+offset_right = 405.96463
+offset_bottom = 422.60757
 scale = Vector2(1.0188524, 2.1646464)
-tooltip_text = "Buy apple"
+tooltip_text = "$5000
++ 50 Speed"
 flat = true
 
 [node name="buy_hay" type="Button" parent="." unique_id=1110146903]
 offset_left = 717.0
-offset_top = 530.0
+offset_top = 247.0
 offset_right = 817.0
-offset_bottom = 561.0
+offset_bottom = 427.99072
 scale = Vector2(0.98556644, 2.228509)
-tooltip_text = "Buy hay
-"
-text = "
+tooltip_text = "$50
++ 5 Speed
 "
 flat = true
 
 [node name="buy_protein" type="Button" parent="." unique_id=1647591776]
 offset_left = 319.0
-offset_top = 871.0
+offset_top = 725.0
 offset_right = 419.0
-offset_bottom = 902.0
+offset_bottom = 844.7875
 scale = Vector2(1, 2.2192683)
-tooltip_text = "Buy protein"
-text = "
+tooltip_text = "$1000
++ 15 Speed
+
 "
 flat = true
 
 [node name="buy_moldy_hay" type="Button" parent="." unique_id=1215212185]
 offset_left = 718.0
-offset_top = 871.0
+offset_top = 640.0
 offset_right = 818.0
-offset_bottom = 902.0
+offset_bottom = 774.61285
 scale = Vector2(1.0265095, 2.2063274)
-tooltip_text = "Buy moldy hay"
+tooltip_text = "$5
+-20 Speed"
 flat = true
 
 [node name="back_button" type="Button" parent="." unique_id=1375859085]

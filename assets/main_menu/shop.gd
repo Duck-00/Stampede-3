@@ -1,5 +1,5 @@
-extends Node2D
-var money = 10000
+extends Node2D	
+var money: int = 10000
 
 
 @onready var label = $Label
@@ -9,7 +9,7 @@ var money = 10000
 @onready var buy_protein = $buy_protein
 
 func _ready():
-	label.text = str(money) 
+	label.text = str(GameData.money) 
 	buy_apple.pressed.connect(_on_buy_apple_pressed)
 	buy_hay.pressed.connect(_on_buy_hay_pressed)
 	buy_moldy_hay.pressed.connect(_on_buy_moldy_hay_pressed)
@@ -20,30 +20,34 @@ func _input(event):
 		get_tree().change_scene_to_file("res://main_menu.tscn")	
 
 func _on_buy_hay_pressed():
-	if money >= 50:
-			money -= 50
+	if GameData.money >= 50:
+			GameData.money -= 50
+			GameData.speed += 500
 	else:
 		print("out of money")
-	label.text = str(money)
+	label.text = str(GameData.money)
 	
 
 func _on_buy_apple_pressed():
-	if money >= 5000:
-		money -= 5000
+	if GameData.money >= 5000:
+		GameData.money -= 5000
+		GameData.speed += 50
 	else:
 		print("out of money")
-	label.text = str(money)
+	label.text = str(GameData.money)
 
 func _on_buy_protein_pressed():
-	if money >= 1000:
-		money -= 1000
+	if GameData.money >= 1000:
+		GameData.money -= 1000
+		GameData.speed += 15
 	else:
 		print("out of money")
-	label.text = str(money)
+	label.text = str(GameData.money)
 	
 func _on_buy_moldy_hay_pressed():
-	if money >= 5:
-		money -= 5
+	if GameData.money >= 5:
+		GameData.money -= 5
+		GameData.speed -= 20
 	else:
 		print("out of money")
-	label.text = str(money)
+	label.text = str(GameData.money)
