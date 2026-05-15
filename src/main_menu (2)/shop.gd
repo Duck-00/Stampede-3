@@ -22,7 +22,7 @@ func _input(event):
 func _on_buy_hay_pressed():
 	if GameData.money >= 50:
 			GameData.money -= 50
-			GameData.speed += 500
+			GameData.speed += 5
 	else:
 		print("out of money")
 	label.text = str(GameData.money)

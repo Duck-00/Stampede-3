@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://e8lbrkdadwjf" path="res://Background.png" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://b6hlosjul355k" path="res://main_menu.gd" id="1_nlkkf"]
 
+[sub_resource type="FontVariation" id="FontVariation_7vrkn"]
+
 [node name="MainMenu" type="MarginContainer" unique_id=700935263]
 offset_left = 6.0
 offset_right = 1742.3635
@@ -39,6 +41,7 @@ theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_7vrkn")
 theme_override_font_sizes/font_size = 80
 text = "Play"
 flat = true
@@ -56,6 +59,7 @@ theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_7vrkn")
 theme_override_font_sizes/font_size = 75
 text = "Shop"
 flat = true
@@ -73,6 +77,7 @@ theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_7vrkn")
 theme_override_font_sizes/font_size = 65
 text = "Credits"
 flat = true
@@ -90,6 +95,7 @@ theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_7vrkn")
 theme_override_font_sizes/font_size = 65
 text = "Quit"
 flat = true

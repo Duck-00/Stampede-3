@@ -1,4 +1,4 @@
 extends Node
 
-var money: int = 10000
+var money: int = 1000000
 var speed: int = 400

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c62os473jy8hl" path="res://Nightshop.webp" id="1_s1764"]
 [ext_resource type="Script" uid="uid://qewyqg0xnrkl" path="res://night_shop.gd" id="1_xx7tf"]
 [ext_resource type="Script" uid="uid://cnw1xuefsbrp4" path="res://back_button.gd" id="2_ppn4j"]
+[ext_resource type="Texture2D" uid="uid://2gycoy1exbd6" path="res://smackaroo.png" id="4_jvt85"]
 
 [node name="Node2D" type="Node2D" unique_id=2018449369]
 script = ExtResource("1_xx7tf")
@@ -17,3 +18,43 @@ offset_right = 102.0
 offset_bottom = 1074.0
 flat = true
 script = ExtResource("2_ppn4j")
+
+[node name="buy_not_a_gun" type="Button" parent="." unique_id=286939030]
+offset_left = 251.0
+offset_top = 258.0
+offset_right = 513.0
+offset_bottom = 610.0
+flat = true
+
+[node name="buy_lace_hay" type="Button" parent="." unique_id=670798569]
+offset_left = 711.0
+offset_top = 282.0
+offset_right = 852.0
+offset_bottom = 591.0
+flat = true
+
+[node name="buy_bull" type="Button" parent="." unique_id=1901158934]
+offset_left = 307.0
+offset_top = 631.0
+offset_right = 478.0
+offset_bottom = 942.0
+flat = true
+
+[node name="buy_unfat" type="Button" parent="." unique_id=549471173]
+offset_left = 731.0
+offset_top = 748.0
+offset_right = 822.0
+offset_bottom = 939.0
+flat = true
+
+[node name="Label" type="Label" parent="." unique_id=1540845906]
+offset_left = 1397.5747
+offset_top = 37.0
+offset_right = 1477.5747
+offset_bottom = 113.0
+theme_override_font_sizes/font_size = 55
+
+[node name="player" type="Sprite2D" parent="." unique_id=580928880]
+position = Vector2(1359.75, 66.53957)
+scale = Vector2(0.063194446, 0.061)
+texture = ExtResource("4_jvt85")

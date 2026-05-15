@@ -79,10 +79,10 @@ flat = true
 script = ExtResource("8_ilkvf")
 
 [node name="Label" type="Label" parent="." unique_id=1366139274]
-offset_left = 1574.2047
-offset_top = 71.829124
-offset_right = 1575.2047
-offset_bottom = 147.82913
+offset_left = 1325.6909
+offset_top = 57.38997
+offset_right = 1326.6909
+offset_bottom = 133.38998
 theme_override_font_sizes/font_size = 55
 
 [node name="player" type="Sprite2D" parent="Label" unique_id=88873782]

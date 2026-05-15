@@ -2,11 +2,22 @@
 
 [ext_resource type="Script" uid="uid://eu0tvaf040iv" path="res://playtomenu.gd" id="1_3jblo"]
 [ext_resource type="Texture2D" uid="uid://vg57juihwco4" path="res://src/main_menu (2)/racing_background.png" id="1_edhw6"]
-[ext_resource type="Script" uid="uid://bbgydplmatvxe" path="res://character_body_2d.gd" id="3_bll63"]
-[ext_resource type="Texture2D" uid="uid://j8aelxhrspug" path="res://src/main_menu (2)/door_nob.webp" id="4_2n4p3"]
+[ext_resource type="PackedScene" uid="uid://bw13wegof27pb" path="res://src/stampede3/horse.tscn" id="4_bll63"]
+[ext_resource type="Script" uid="uid://dpmdl50um04xr" path="res://area_2d.gd" id="5_2n4p3"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_a4gw8"]
-size = Vector2(398.66638, 287.98877)
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_bll63"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2n4p3"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_edgmy"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lpheh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2n4p3"]
+radius = 262.83453
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_edgmy"]
+size = Vector2(475, 748)
 
 [node name="Node2D" type="Node2D" unique_id=28063593]
 script = ExtResource("1_3jblo")
@@ -16,45 +27,41 @@ position = Vector2(960, 541.00006)
 scale = Vector2(1.4033552, 1.4088545)
 texture = ExtResource("1_edhw6")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1415029484]
-disable_mode = 1
-script = ExtResource("3_bll63")
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1073160116]
-position = Vector2(737, 549.00006)
-scale = Vector2(0.4179507, 0.23421934)
-texture = ExtResource("4_2n4p3")
-offset = Vector2(-3.289917, 49.099365)
-flip_h = true
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CharacterBody2D" unique_id=550031729]
-position = Vector2(726, 553)
-polygon = PackedVector2Array(-115, 6, -112, 12, -96, 14, -92, 29, -95, 47, -86, 67, -61, 74, -41, 67, -35, 45, -35, 35, 1, 48, 10, 59, 40, 66, 70, 58, 66, 29, 72, 21, 68, 16, 72, 7, 91, 1, 118, -6, 126, -21, 133, -30, 127, -43, 99, -50, 41, -53, 6, -45, -29, -36, -55, -25, -105, -5, -116, 2)
-
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=648239942]
 position = Vector2(-330, 233)
-scale = Vector2(13.3484535, 2.0123677)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=435300163]
-position = Vector2(96.490585, 440.2773)
-rotation = -3.1415925
-scale = Vector2(0.36662048, -0.12415373)
-shape = SubResource("RectangleShape2D_a4gw8")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=375155185]
+position = Vector2(321, 268)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_bll63")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1228844113]
-position = Vector2(96.34074, -134.66724)
-rotation = -3.1415925
-scale = Vector2(0.36662048, -0.12415373)
-shape = SubResource("RectangleShape2D_a4gw8")
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=879532597]
+position = Vector2(863, -239)
+rotation = 3.1415927
+shape = SubResource("WorldBoundaryShape2D_2n4p3")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=344478762]
-position = Vector2(20.45181, 154.04736)
-rotation = -3.1415925
-scale = Vector2(-0.01948447, 2.0508099)
-shape = SubResource("RectangleShape2D_a4gw8")
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=160619611]
+position = Vector2(1176.0001, 852)
+shape = SubResource("WorldBoundaryShape2D_edgmy")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1482610620]
-position = Vector2(172.60426, 154.54433)
-rotation = -3.1415925
-scale = Vector2(-0.01948447, 2.0508099)
-shape = SubResource("RectangleShape2D_a4gw8")
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=799843316]
+position = Vector2(2252, 343)
+rotation = 4.712389
+shape = SubResource("WorldBoundaryShape2D_lpheh")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D" unique_id=1395958633]
+position = Vector2(737, 289)
+shape = SubResource("CircleShape2D_2n4p3")
+one_way_collision = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1175863877]
+script = ExtResource("5_2n4p3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=398028250]
+position = Vector2(1734.5, 549)
+shape = SubResource("RectangleShape2D_edgmy")
+
+[node name="Horse" parent="." unique_id=14961587 instance=ExtResource("4_bll63")]
+position = Vector2(1120, 501)
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
