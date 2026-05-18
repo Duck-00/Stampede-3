@@ -47,7 +47,8 @@ func _on_buy_protein_pressed():
 func _on_buy_moldy_hay_pressed():
 	if GameData.money >= 5:
 		GameData.money -= 5
-		GameData.speed -= 20
+		GameData.horses += 1
+		
 	else:
 		print("out of money")
 	label.text = str(GameData.money)

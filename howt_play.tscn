@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://jrn4j3l8tka4"]
+
+[ext_resource type="Script" uid="uid://ljhwfld75rpl" path="res://howt_play.gd" id="1_8og7q"]
+[ext_resource type="Texture2D" uid="uid://vg57juihwco4" path="res://src/main_menu (2)/racing_background.png" id="1_dl2sg"]
+
+[node name="Node2D" type="Node2D" unique_id=7695369]
+position = Vector2(1, 0)
+script = ExtResource("1_8og7q")
+
+[node name="RacingBackground" type="Sprite2D" parent="." unique_id=60196041]
+position = Vector2(959.50006, 581.5)
+scale = Vector2(1.4172138, 1.4986979)
+texture = ExtResource("1_dl2sg")
+
+[node name="Label" type="Label" parent="." unique_id=843503764]
+offset_left = 631.0
+offset_top = 245.0
+offset_right = 1423.0
+offset_bottom = 880.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "
+Your mouse is your horse
+
+Esc: Back to main menu
+
+Play:
+Start the game and hope you win
+
+Shop:
+ Click on the price to buy
+Click left or right to go to night shop
+hover over the item to see stats
+
+"

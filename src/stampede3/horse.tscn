@@ -3,17 +3,32 @@
 [ext_resource type="Script" uid="uid://bbgydplmatvxe" path="res://character_body_2d.gd" id="1_4ojqv"]
 [ext_resource type="Texture2D" uid="uid://j8aelxhrspug" path="res://src/main_menu (2)/door_nob.webp" id="2_1dewa"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_4ojqv"]
+radius = 26.172504
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ojqv"]
+size = Vector2(58, 20)
+
 [node name="Horse" type="CharacterBody2D" unique_id=14961587]
 disable_mode = 1
 script = ExtResource("1_4ojqv")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=200785510]
 position = Vector2(2, 2)
-scale = Vector2(0.4179507, 0.23421934)
+scale = Vector2(0.05, 0.05)
 texture = ExtResource("2_1dewa")
 offset = Vector2(-3.289917, 49.099365)
 flip_h = true
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=787279285]
-position = Vector2(-10, 6)
-polygon = PackedVector2Array(-115, 6, -112, 12, -96, 14, -92, 29, -95, 47, -86, 67, -61, 74, -41, 67, -35, 45, -35, 35, 1, 48, 10, 59, 40, 66, 70, 58, 66, 29, 72, 21, 68, 16, 72, 7, 91, 1, 118, -6, 126, -21, 133, -30, 127, -43, 99, -50, 41, -53, 6, -45, -29, -36, -55, -25, -105, -5, -116, 2)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1300697292]
+polygon = PackedVector2Array(17, -7, 16, 2, 10, 4, 10, 16, -9, 20, -14, 3, 4, -9)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=544130063]
+position = Vector2(3, 5)
+shape = SubResource("CircleShape2D_4ojqv")
+disabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=853193955]
+position = Vector2(19, 0)
+shape = SubResource("RectangleShape2D_4ojqv")
+disabled = true

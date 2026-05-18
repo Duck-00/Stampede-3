@@ -28,6 +28,24 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
+[node name="How_play" type="Button" parent="CenterContainer/VBoxContainer2" unique_id=761451710]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.19314823, 0.014652444, 0.2511438, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.46755254, 0.39599946, 0.7168519, 1)
+theme_override_colors/font_hover_color = Color(0.36329964, 0.054957032, 0.46271467, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_7vrkn")
+theme_override_font_sizes/font_size = 30
+text = "How to Play"
+flat = true
+
 [node name="play_button" type="Button" parent="CenterContainer/VBoxContainer2" unique_id=1401146127]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.19314823, 0.014652444, 0.2511438, 1)
@@ -100,6 +118,7 @@ theme_override_font_sizes/font_size = 65
 text = "Quit"
 flat = true
 
+[connection signal="pressed" from="CenterContainer/VBoxContainer2/How_play" to="." method="_on_how_play_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer2/play_button" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer2/shop_button" to="." method="_on_shop_button_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer2/credits_button" to="." method="_on_credits_button_pressed"]
